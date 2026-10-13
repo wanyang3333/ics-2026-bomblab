@@ -73,7 +73,7 @@ answer = 3 * (step0 - step2) + 0x37c9;
 ./defuser --seed 43 --phase 1 | ./bomb --seed 43 --phase 1
 输出 Phase 1 defused.
 
-截图：images/phase1.png
+![Phase 1](images/phase1.png)
 
 （三）第二关----------------------------------------------------------
 
@@ -136,7 +136,7 @@ for (int i = 1; i <= 5; i++) {
 ./defuser --seed 43 --phase 2 | ./bomb --seed 43 --phase 2
 输出 Phase 2 defused.
 
-截图：images/phase2.png
+![Phase 2](images/phase2.png)
 
 （四）第三关-----------------------------------------------------------
 
@@ -204,7 +204,7 @@ X  = (uint32_t)(challenge >> 32) ^ (uint32_t)(challenge >> 3);
 ./defuser --seed 43 --phase 3 | ./bomb --seed 43 --phase 3
 输出 Phase 3 defused.
 
-截图：images/phase3.png
+![Phase 3](images/phase3.png)
 
 （五）第四关---------------------------------------------------------------
 
@@ -299,7 +299,7 @@ answer = p4_walk(target, 0, 0x7f, key);
 ./defuser --seed 43 --phase 4 | ./bomb --seed 43 --phase 4
 输出 Phase 4 defused.
 
-截图：images/phase4.png
+![Phase 4](images/phase4.png)
 
 （六）第五关--------------------------------------------------------------------
 
@@ -402,7 +402,7 @@ for (i = 0; i < steps; i++) {
 ./defuser --seed 43 --phase 5 | ./bomb --seed 43 --phase 5
 输出 Phase 5 defused.
 
-截图：images/phase5.png
+![Phase 5](images/phase5.png)
 
 （七）第六关------------------------------------------------------------
 
@@ -477,7 +477,7 @@ answer = r2 + 0xdba7;
 ./defuser --seed 43 --phase 6 | ./bomb --seed 43 --phase 6
 输出 Phase 6 defused.
 
-截图：images/phase6.png
+![Phase 6](images/phase6.png)
 
 （八）Honor（Secret Phase）----------------------------------------------
 
@@ -575,14 +575,14 @@ c = b ^ (0x3b81 + Y + a + (X >> 1));
 { ./defuser --seed 43; ./defuser --secret --seed 43; } | ./bomb --seed 43
 输出 Secret phase defused.
 
-截图：images/secret.png
+![Honor](images/secret.png)
 
 （九）公开测试结果------------------------------------------------------
 
 Public tests: 60/60
 Secret public tests: 10/10
 
-截图：images/all_tests.png
+![完整测试](images/all_tests.png)
 
 （十）引用资料与工具---------------------------------------------------------
 
